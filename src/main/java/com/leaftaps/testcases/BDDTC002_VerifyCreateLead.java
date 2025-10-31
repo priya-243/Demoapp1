@@ -14,7 +14,7 @@ public class BDDTC002_VerifyCreateLead extends ProjectSpecificMethods {
 	public void setValues() {
 		testcaseName = "Verify Lead Creation in Leaftap application";
 		testDescription ="Verify create lead functionality with positive data";
-		authors="Priya";
+		authors="Bhuvanesh";
 		category ="regression";
 	}
 
