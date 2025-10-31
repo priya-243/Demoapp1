@@ -12,10 +12,10 @@ public class BDDTC001_VerifyLogin extends ProjectSpecificMethods {
 	
 	@BeforeTest
 	public void setValues() {
-		testcaseName = "VerifyLogin";
-		testDescription ="Verify Login functionality with positive data";
-		authors="Bhuvanesh";
-		category ="Smoke";
+		testcaseName = "Verify Lead Creation in Leaftap application";
+		testDescription ="Verify create lead functionality with positive data";
+		authors="Priya";
+		category ="regression";
 	}
 
 }
