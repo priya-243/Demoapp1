@@ -1,0 +1,33 @@
+package com.leaftaps.pages;
+
+import com.framework.selenium.api.design.Locators;
+import com.framework.testng.api.base.ProjectSpecificMethods;
+
+import io.cucumber.java.en.When;
+
+public class HomePage extends ProjectSpecificMethods{
+	
+	public HomePage verifyHomePage() {
+		
+		verifyDisplayed(locateElement(Locators.LINK_TEXT, "CRM/SFA"));
+		reportStep("Homepage is loaded", "pass");
+		return this;
+	}
+	
+	@When("click on CRM\\/SFA link")
+	public MyHomePage clickCrmsfaLink() {
+		click(locateElement(Locators.LINK_TEXT, "CRM/SFA"));
+		reportStep("CRM/SFA link is clicked", "pass");
+		return new MyHomePage();
+	}
+	
+	public LoginPage clickLogOut() {
+		click(locateElement(Locators.CLASS_NAME, "decorativeSubmit"));
+		reportStep("Logout button is clicked", "pass");
+		return new LoginPage();
+
+
+	}
+	
+	
+}
